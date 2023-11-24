@@ -14,3 +14,5 @@ class Producto(models.Model):
 class Usuario(models.Model):
     nombre = models.CharField(max_length=50)
     producto = models.ForeignKey('Producto', on_delete=models.SET_NULL, null=True) 
+
+
