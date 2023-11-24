@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+</head>
+
+<body class="text-bg-dark ">
+
+  <header class=" bg-dark text-white header shadow">
+    <div class="container">
+      <div class="navbar bg-body-tertiary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+          <path
+            d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+        </svg>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 text-secondary">MINIMARKET</a></li>
+          <li></li><a href="/minimarketapi" style="margin-left: 10px;" class="btn btn-dark">MINIMARKET API REST</a></li>
+          <li></li><a href="/admin" style="margin-left: 10px;" class="btn btn-dark">Admin</a></li>
+        </ul>
+
+        <ul class="nav">
+          
+          <li></li><a href="/admin/logout" class="btn btn-dark btn-outline">Cerrar sesión <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg></a></li>
+          <li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mt-auto shadow">
+    <nav class="navbar  justify-content-center shadow-lg h1"
+    style="background-color: #5a5858; margin-top:20px;">
+      Panel Central del Contenido
+    </nav>
+  </div>
+
+  <main class="container align-center">
+    <div class="row">
+    
+      <div class="card-dark col text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Gestión de Inventario <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dropbox" viewBox="0 0 16 16">
+            <path d="M8.01 4.555 4.005 7.11 8.01 9.665 4.005 12.22 0 9.651l4.005-2.555L0 4.555 4.005 2 8.01 4.555Zm-4.026 8.487 4.006-2.555 4.005 2.555-4.005 2.555-4.006-2.555Zm4.026-3.39 4.005-2.556L8.01 4.555 11.995 2 16 4.555 11.995 7.11 16 9.665l-4.005 2.555L8.01 9.651Z"/>
+          </svg></h5>
+          <p class="card-text ">Listar - agregar - eliminar productos.</p>
+          <a href="/producto" class="btn btn-primary btn btn-light">ir a Gestion <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+            <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+          </svg> </a>
+        </div>
+      </div>
+
+      <div class="card-dark  text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Gestion Ventas y Boletas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+          </svg></h5>
+          <p class="card-text ">Listar - Registrar - Anular Ventas</p>
+          <a href="/Gventas" class="btn btn-primary btn btn-light">ir a Gestión <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+          </svg></a>
+        </div>
+      </div>
+
+      <div class="card-dark  text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Usuarios <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+          </svg></h5>
+          <p class="card-text ">Listar - Agregar - Eliminar Usuario.</p>
+          <a href="/producto" class="btn btn-primary btn btn-light">ir a Gestion <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+            <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+          </svg></a>
+        </div>
+      </div>
+
+      <div class="card-dark  text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Punto de Ventas</h5>
+          <p class="card-text ">Funciones.</p>
+          <a href="/producto" class="btn btn-primary btn btn-light">boton</a>
+        </div>
+      </div>
+
+      <div class="card-dark  text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Generar Informes</h5>
+          <p class="card-text ">Funciones.</p>
+          <a href="/producto" class="btn btn-primary btn btn-light">boton</a>
+        </div>
+      </div>
+
+      <div class="card-dark  text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Chatbot</h5>
+          <p class="card-text ">Funciones.</p>
+          <a href="/chatbot" class="btn btn-primary btn btn-light">boton</a>
+        </div>
+      </div>
+
+      <div class="card-dark  text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo</h5>
+          <p class="card-text ">Funciones.</p>
+          <a href="/producto" class="btn btn-primary btn btn-light">boton</a>
+        </div>
+      </div>
+
+      <div class="card-dark  text-center mb-3 w-50 mt-auto shadow">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo</h5>
+          <p class="card-text ">Funciones.</p>
+          <a href="/producto" class="btn btn-primary btn btn-light">boton</a>
+        </div>
+      </div>
+   </div>
+  </main>
+
+</body>
+
+</html>

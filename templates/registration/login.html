@@ -1,0 +1,39 @@
+<div >
+
+    {% extends "base.html" %}
+    {% block content %}
+        {% if form.errors %}
+        <p class="alert alert-dark">Tu usuario y password no coinciden. 
+            Por favor intentalo nuevamente.</p>
+        {% endif %}
+        {% if next %}
+        {% if user.is_authenticated %}
+        <p class="alert alert-dark">Tu cuenta no tiene acceso a esta página. Para continuar,
+            inicia sesión con una cuenta que tenga acceso.</p>
+        {% else %}
+        <p class="alert alert-dark">Por favor inicia sesión para acceder a esta página.</p>
+        {% endif %}
+        {% endif %}
+        <form method="post" class="form-signin w-100 m-auto" action="{% url 'login' %}">
+            {% csrf_token %}
+            <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" 
+            alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+            
+            <label for="inputEmail" class="sr-only">{{ form.username.label_tag }}</label>
+            <input type="text" id="inputEmail" name="username" class="form-control" 
+            placeholder="Nombre de usuario" required autofocus>
+    
+            <label for="inputPassword" class="sr-only">Contraseña:</label>
+            <input type="password" id="inputPassword" name="password" class="form-control" 
+            placeholder="Password" required>
+    
+            <button class="btn btn-lg btn-dark btn-block mt-2" type="submit" value="login">
+                Iniciar Sesión</button>
+            <input type="hidden" name="next" value="{{ next }}" />
+        </form>
+            <p class="mt-5 mb-3 text-muted">&copy; 2023-2023</p>
+    
+    {% endblock %}
+    
+    </div>
